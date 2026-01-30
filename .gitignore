@@ -1,0 +1,4 @@
+node_modules/
+assets/raw-images/
+package.json
+compress-images.js
