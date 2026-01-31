@@ -1203,8 +1203,9 @@ ul {
 
 .contact-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+/*     grid-template-columns: 1fr 1fr; */
     gap: 3rem;
+    justify-content: center;
 }
 
 .contact-form-wrapper {
