@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wanderlust Travel - Your Journey Begins Here</title>
+    <title>Magnificent Travels & Tours Singapore Pte. Ltd. - Your Journey Begins Here</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
@@ -13,11 +13,12 @@
     <nav class="navbar">
         <div class="container">
             <div class="nav-wrapper">
-                <div class="logo">
-                    <i class="fas fa-plane-departure"></i>
-                    <span>Wanderlust Travel</span>
-                </div>
-                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+				<div class="logo">
+					<img src="assets/images/logo.webp" alt="Logo" class="header-logo"
+						style="height: 55px; border-radius: 50%; width: 55px;"> <span>Magnificent
+						Travels &amp; Tours Singapore Pte. Ltd.</span>
+				</div>
+				<button class="mobile-menu-toggle" id="mobileMenuToggle">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -25,10 +26,8 @@
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="destinations.html">Destinations</a></li>
-                    <li><a href="packages.html">Tour Packages</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#" class="btn-nav">Book Now</a></li>
                 </ul>
             </div>
         </div>
@@ -41,74 +40,11 @@
             <h1 class="hero-title">Discover Your Next Adventure</h1>
             <p class="hero-subtitle">Explore the world's most beautiful destinations with our expertly crafted tours</p>
             <div class="hero-buttons">
-                <a href="packages.html" class="btn btn-primary">Explore Tours</a>
                 <a href="destinations.html" class="btn btn-secondary">View Destinations</a>
             </div>
         </div>
         <div class="hero-scroll">
             <i class="fas fa-chevron-down"></i>
-        </div>
-    </section>
-
-    <!-- Quick Search Widget -->
-    <section class="search-widget">
-        <div class="container">
-            <div class="search-card">
-                <h3>Find Your Perfect Trip</h3>
-                <form class="search-form" id="searchForm">
-                    <div class="form-group">
-                        <label for="destination">
-                            <i class="fas fa-map-marker-alt"></i>
-                            Destination
-                        </label>
-                        <select id="destination" name="destination">
-                            <option value="">Select Destination</option>
-                            <option value="paris">Paris, France</option>
-                            <option value="bali">Bali, Indonesia</option>
-                            <option value="tokyo">Tokyo, Japan</option>
-                            <option value="santorini">Santorini, Greece</option>
-                            <option value="maldives">Maldives</option>
-                            <option value="dubai">Dubai, UAE</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="travelDate">
-                            <i class="fas fa-calendar-alt"></i>
-                            Travel Date
-                        </label>
-                        <input type="date" id="travelDate" name="travelDate">
-                    </div>
-                    <div class="form-group">
-                        <label for="duration">
-                            <i class="fas fa-clock"></i>
-                            Duration
-                        </label>
-                        <select id="duration" name="duration">
-                            <option value="">Select Duration</option>
-                            <option value="1-3">1-3 Days</option>
-                            <option value="4-7">4-7 Days</option>
-                            <option value="8-14">8-14 Days</option>
-                            <option value="15+">15+ Days</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="travelers">
-                            <i class="fas fa-users"></i>
-                            Travelers
-                        </label>
-                        <select id="travelers" name="travelers">
-                            <option value="1">1 Person</option>
-                            <option value="2">2 People</option>
-                            <option value="3-5">3-5 People</option>
-                            <option value="6+">6+ People</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn btn-search">
-                        <i class="fas fa-search"></i>
-                        Search Tours
-                    </button>
-                </form>
-            </div>
         </div>
     </section>
 
@@ -130,11 +66,6 @@
                     <div class="destination-content">
                         <h3>Paris, France</h3>
                         <p><i class="fas fa-map-marker-alt"></i> Europe</p>
-                        <div class="destination-meta">
-                            <span><i class="fas fa-camera"></i> 156 Tours</span>
-                            <span class="price">From $1,299</span>
-                        </div>
-                        <a href="destinations.html" class="btn-link">Explore <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -148,11 +79,6 @@
                     <div class="destination-content">
                         <h3>Bali, Indonesia</h3>
                         <p><i class="fas fa-map-marker-alt"></i> Asia</p>
-                        <div class="destination-meta">
-                            <span><i class="fas fa-camera"></i> 203 Tours</span>
-                            <span class="price">From $899</span>
-                        </div>
-                        <a href="destinations.html" class="btn-link">Explore <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -163,11 +89,6 @@
                     <div class="destination-content">
                         <h3>Tokyo, Japan</h3>
                         <p><i class="fas fa-map-marker-alt"></i> Asia</p>
-                        <div class="destination-meta">
-                            <span><i class="fas fa-camera"></i> 178 Tours</span>
-                            <span class="price">From $1,499</span>
-                        </div>
-                        <a href="destinations.html" class="btn-link">Explore <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -178,11 +99,6 @@
                     <div class="destination-content">
                         <h3>Santorini, Greece</h3>
                         <p><i class="fas fa-map-marker-alt"></i> Europe</p>
-                        <div class="destination-meta">
-                            <span><i class="fas fa-camera"></i> 142 Tours</span>
-                            <span class="price">From $1,699</span>
-                        </div>
-                        <a href="destinations.html" class="btn-link">Explore <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -196,11 +112,6 @@
                     <div class="destination-content">
                         <h3>Maldives</h3>
                         <p><i class="fas fa-map-marker-alt"></i> Indian Ocean</p>
-                        <div class="destination-meta">
-                            <span><i class="fas fa-camera"></i> 89 Tours</span>
-                            <span class="price">From $2,499</span>
-                        </div>
-                        <a href="destinations.html" class="btn-link">Explore <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -211,11 +122,6 @@
                     <div class="destination-content">
                         <h3>Dubai, UAE</h3>
                         <p><i class="fas fa-map-marker-alt"></i> Middle East</p>
-                        <div class="destination-meta">
-                            <span><i class="fas fa-camera"></i> 124 Tours</span>
-                            <span class="price">From $1,399</span>
-                        </div>
-                        <a href="destinations.html" class="btn-link">Explore <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -225,257 +131,53 @@
         </div>
     </section>
 
-    <!-- Featured Tour Packages -->
-    <section class="section packages-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Featured Tour Packages</h2>
-                <p class="section-subtitle">Handpicked experiences for unforgettable journeys</p>
-            </div>
-            <div class="packages-grid">
-                <div class="package-card" data-aos="fade-up">
-                    <div class="package-image">
-                        <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&h=600&fit=crop" alt="European Highlights">
-                        <div class="package-duration">
-                            <i class="fas fa-clock"></i> 10 Days
-                        </div>
-                    </div>
-                    <div class="package-content">
-                        <div class="package-header">
-                            <h3>European Highlights</h3>
-                            <div class="package-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <span>(248 reviews)</span>
-                            </div>
-                        </div>
-                        <p class="package-description">Explore the best of Paris, Rome, and Barcelona in this comprehensive European tour.</p>
-                        <div class="package-features">
-                            <span><i class="fas fa-hotel"></i> 4-Star Hotels</span>
-                            <span><i class="fas fa-utensils"></i> Daily Breakfast</span>
-                            <span><i class="fas fa-bus"></i> Transportation</span>
-                            <span><i class="fas fa-user-tie"></i> Tour Guide</span>
-                        </div>
-                        <div class="package-footer">
-                            <div class="package-price">
-                                <span class="price-label">From</span>
-                                <span class="price-value">$2,499</span>
-                                <span class="price-per">per person</span>
-                            </div>
-                            <a href="packages.html" class="btn btn-primary">View Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="package-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="package-image">
-                        <img src="https://images.unsplash.com/photo-1559628376-f3fe5f782a2e?w=800&h=600&fit=crop" alt="Tropical Paradise">
-                        <div class="package-duration">
-                            <i class="fas fa-clock"></i> 7 Days
-                        </div>
-                        <div class="package-badge">Best Seller</div>
-                    </div>
-                    <div class="package-content">
-                        <div class="package-header">
-                            <h3>Tropical Paradise</h3>
-                            <div class="package-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                                <span>(312 reviews)</span>
-                            </div>
-                        </div>
-                        <p class="package-description">Relax on pristine beaches and explore the vibrant culture of Bali.</p>
-                        <div class="package-features">
-                            <span><i class="fas fa-hotel"></i> Beach Resort</span>
-                            <span><i class="fas fa-utensils"></i> All Meals</span>
-                            <span><i class="fas fa-swimmer"></i> Water Sports</span>
-                            <span><i class="fas fa-spa"></i> Spa Treatment</span>
-                        </div>
-                        <div class="package-footer">
-                            <div class="package-price">
-                                <span class="price-label">From</span>
-                                <span class="price-value">$1,799</span>
-                                <span class="price-per">per person</span>
-                            </div>
-                            <a href="packages.html" class="btn btn-primary">View Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="package-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="package-image">
-                        <img src="https://images.unsplash.com/photo-1480796927426-f609979314bd?w=800&h=600&fit=crop" alt="Asian Adventure">
-                        <div class="package-duration">
-                            <i class="fas fa-clock"></i> 12 Days
-                        </div>
-                    </div>
-                    <div class="package-content">
-                        <div class="package-header">
-                            <h3>Asian Adventure</h3>
-                            <div class="package-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <span>(189 reviews)</span>
-                            </div>
-                        </div>
-                        <p class="package-description">Discover the ancient temples and modern wonders of Thailand, Cambodia, and Vietnam.</p>
-                        <div class="package-features">
-                            <span><i class="fas fa-hotel"></i> 3-4 Star Hotels</span>
-                            <span><i class="fas fa-utensils"></i> Most Meals</span>
-                            <span><i class="fas fa-bus"></i> Transportation</span>
-                            <span><i class="fas fa-landmark"></i> Temple Tours</span>
-                        </div>
-                        <div class="package-footer">
-                            <div class="package-price">
-                                <span class="price-label">From</span>
-                                <span class="price-value">$2,199</span>
-                                <span class="price-per">per person</span>
-                            </div>
-                            <a href="packages.html" class="btn btn-primary">View Details</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center" style="margin-top: 3rem;">
-                <a href="packages.html" class="btn btn-primary">View All Packages</a>
-            </div>
-        </div>
-    </section>
-
+   
     <!-- Why Choose Us -->
     <section class="section why-choose-us">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Why Choose Wanderlust Travel</h2>
-                <p class="section-subtitle">We make your travel dreams come true</p>
+                <h2 class="section-title">Why Choose Magnificent Travels & Tours Singapore Pte. Ltd.</h2>
+                <p class="section-subtitle">Travel Smart. Travel Safe. Travel Magnificent.</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card" data-aos="zoom-in">
                     <div class="feature-icon">
                         <i class="fas fa-award"></i>
                     </div>
-                    <h3>Expert Guides</h3>
-                    <p>Professional local guides with extensive knowledge and passion for travel</p>
+                    <h3>Trusted Agency</h3>
+                    <p>Licensed and registered travel agency in Singapore</p>
+                </div>
+                <div class="feature-card" data-aos="zoom-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Trusted Partners</h3>
+                    <p>Trusted partnerships with airlines, hotels, and global tour operators</p>
                 </div>
                 <div class="feature-card" data-aos="zoom-in" data-aos-delay="100">
                     <div class="feature-icon">
                         <i class="fas fa-dollar-sign"></i>
                     </div>
                     <h3>Best Prices</h3>
-                    <p>Competitive rates with no hidden fees. Best value for your money</p>
+                    <p>Competitive prices for flights, hotels, and tour packages</p>
                 </div>
                 <div class="feature-card" data-aos="zoom-in" data-aos-delay="200">
                     <div class="feature-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>Safe & Secure</h3>
-                    <p>Your safety is our priority with 24/7 support and comprehensive insurance</p>
+                    <h3>Best Support</h3>
+                    <p>Visa assistance and travel documentation support</p>
                 </div>
                 <div class="feature-card" data-aos="zoom-in" data-aos-delay="300">
                     <div class="feature-icon">
                         <i class="fas fa-heart"></i>
                     </div>
                     <h3>Personalized Service</h3>
-                    <p>Customized itineraries tailored to your preferences and interests</p>
+                    <p>Personalized travel planning and dedicated customer support</p>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="section testimonials-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">What Our Travelers Say</h2>
-                <p class="section-subtitle">Real experiences from real travelers</p>
-            </div>
-            <div class="testimonials-slider">
-                <div class="testimonial-card active" data-aos="fade-up">
-                    <div class="testimonial-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"Our trip to Bali was absolutely amazing! Everything was perfectly organized, and our guide was incredibly knowledgeable. We can't wait to book our next adventure with Wanderlust Travel!"</p>
-                    <div class="testimonial-author">
-                        <img src="https://i.pravatar.cc/100?img=1" alt="Sarah Johnson">
-                        <div>
-                            <h4>Sarah Johnson</h4>
-                            <p>Bali Paradise Package</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="testimonial-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"The European Highlights tour exceeded all our expectations. From the Eiffel Tower to the Colosseum, every moment was magical. Highly recommended!"</p>
-                    <div class="testimonial-author">
-                        <img src="https://i.pravatar.cc/100?img=12" alt="Michael Chen">
-                        <div>
-                            <h4>Michael Chen</h4>
-                            <p>European Highlights Tour</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="testimonial-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"Wanderlust Travel made our honeymoon in the Maldives truly unforgettable. The resort was stunning, and the service was impeccable. Thank you for creating such beautiful memories!"</p>
-                    <div class="testimonial-author">
-                        <img src="https://i.pravatar.cc/100?img=5" alt="Emily Rodriguez">
-                        <div>
-                            <h4>Emily Rodriguez</h4>
-                            <p>Maldives Luxury Escape</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-dots">
-                <span class="dot active" data-slide="0"></span>
-                <span class="dot" data-slide="1"></span>
-                <span class="dot" data-slide="2"></span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter -->
-    <section class="newsletter-section">
-        <div class="container">
-            <div class="newsletter-content" data-aos="fade-up">
-                <div class="newsletter-text">
-                    <h2>Get Travel Inspiration & Exclusive Offers</h2>
-                    <p>Subscribe to our newsletter and never miss out on amazing deals</p>
-                </div>
-                <form class="newsletter-form" id="newsletterForm">
-                    <input type="email" placeholder="Enter your email address" required>
-                    <button type="submit" class="btn btn-primary">Subscribe</button>
-                </form>
-            </div>
-        </div>
-    </section>
+    </section>   
 
     <!-- Footer -->
     <footer class="footer">
@@ -483,8 +185,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <i class="fas fa-plane-departure"></i>
-                        <span>Wanderlust Travel</span>
+                        <span>Magnificent Travels & Tours Singapore Pte. Ltd.</span>
                     </div>
                     <p>Your trusted partner for unforgettable travel experiences around the world.</p>
                     <div class="social-links">
@@ -500,33 +201,21 @@
                     <ul>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="destinations.html">Destinations</a></li>
-                        <li><a href="packages.html">Tour Packages</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Support</h3>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Booking Guide</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Cancellation Policy</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h3>Contact Info</h3>
                     <ul class="contact-info">
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Travel Street, Adventure City, TC 12345</li>
-                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
-                        <li><i class="fas fa-envelope"></i> info@wanderlusttravel.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 54 Maude Road, #03-01, Townshend Building, Singapore 208346</li>
+                        <li><i class="fas fa-phone"></i> +65 87132669</li>
+                        <li><i class="fas fa-envelope"></i> magnificent.travelsntsg@gmail.com</li>
                         <li><i class="fas fa-clock"></i> Mon - Fri: 9:00 AM - 6:00 PM</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Wanderlust Travel. All rights reserved.</p>
+                <p>&copy; 2026 Magnificent Travels & Tours Singapore Pte. Ltd.. All rights reserved.</p>
             </div>
         </div>
     </footer>
