@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Packages - Wanderlust Travel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-plane-departure"></i>
+                    <span>Wanderlust Travel</span>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="packages.html" class="active">Tour Packages</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" class="btn-nav">Book Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Tour Packages</h1>
+            <p>Curated experiences for unforgettable journeys</p>
+        </div>
+    </section>
+
+    <!-- Packages Content -->
+    <section class="section">
+        <div class="container">
+            <!-- Filter Section -->
+            <div class="filter-section" data-aos="fade-up">
+                <h3><i class="fas fa-filter"></i> Filter Packages</h3>
+                <div class="filter-group">
+                    <label>By Category</label>
+                    <div class="filter-buttons">
+                        <button class="package-filter-btn active" data-filter="all">All Packages</button>
+                        <button class="package-filter-btn" data-filter="luxury">Luxury</button>
+                        <button class="package-filter-btn" data-filter="adventure">Adventure</button>
+                        <button class="package-filter-btn" data-filter="family">Family</button>
+                        <button class="package-filter-btn" data-filter="romantic">Romantic</button>
+                        <button class="package-filter-btn" data-filter="cultural">Cultural</button>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <label>By Price Range</label>
+                    <div class="price-range">
+                        <input type="number" id="minPrice" placeholder="Min ($)" min="0">
+                        <span>to</span>
+                        <input type="number" id="maxPrice" placeholder="Max ($)" min="0">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Packages Grid -->
+            <div class="packages-grid">
+                <!-- European Highlights -->
+                <div class="package-card" data-category="cultural" data-aos="fade-up">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&h=600&fit=crop" alt="European Highlights">
+                        <div class="package-duration">
+                            <i class="fas fa-clock"></i> 10 Days
+                        </div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header">
+                            <h3>European Highlights</h3>
+                            <div class="package-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(248 reviews)</span>
+                            </div>
+                        </div>
+                        <p class="package-description">Explore the best of Paris, Rome, and Barcelona in this comprehensive European tour featuring iconic landmarks and cultural experiences.</p>
+                        <div class="package-features">
+                            <span><i class="fas fa-hotel"></i> 4-Star Hotels</span>
+                            <span><i class="fas fa-utensils"></i> Daily Breakfast</span>
+                            <span><i class="fas fa-bus"></i> Transportation</span>
+                            <span><i class="fas fa-user-tie"></i> Tour Guide</span>
+                        </div>
+                        <div class="package-itinerary">
+                            <h4><i class="fas fa-list"></i> Highlights:</h4>
+                            <ul>
+                                <li>Eiffel Tower & Louvre Museum</li>
+                                <li>Colosseum & Vatican City</li>
+                                <li>Sagrada Familia & Park Güell</li>
+                            </ul>
+                        </div>
+                        <div class="package-footer">
+                            <div class="package-price">
+                                <span class="price-label">From</span>
+                                <span class="price-value">$2,499</span>
+                                <span class="price-per">per person</span>
+                            </div>
+                            <a href="#booking" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tropical Paradise -->
+                <div class="package-card" data-category="romantic" data-aos="fade-up" data-aos-delay="100">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1559628376-f3fe5f782a2e?w=800&h=600&fit=crop" alt="Tropical Paradise">
+                        <div class="package-duration">
+                            <i class="fas fa-clock"></i> 7 Days
+                        </div>
+                        <div class="package-badge">Best Seller</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header">
+                            <h3>Tropical Paradise - Bali</h3>
+                            <div class="package-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(312 reviews)</span>
+                            </div>
+                        </div>
+                        <p class="package-description">Relax on pristine beaches, explore ancient temples, and immerse yourself in the vibrant Balinese culture.</p>
+                        <div class="package-features">
+                            <span><i class="fas fa-hotel"></i> Beach Resort</span>
+                            <span><i class="fas fa-utensils"></i> All Meals</span>
+                            <span><i class="fas fa-swimmer"></i> Water Sports</span>
+                            <span><i class="fas fa-spa"></i> Spa Treatment</span>
+                        </div>
+                        <div class="package-itinerary">
+                            <h4><i class="fas fa-list"></i> Highlights:</h4>
+                            <ul>
+                                <li>Ubud Rice Terraces & Monkey Forest</li>
+                                <li>Tanah Lot Temple Sunset</li>
+                                <li>Snorkeling at Nusa Penida</li>
+                            </ul>
+                        </div>
+                        <div class="package-footer">
+                            <div class="package-price">
+                                <span class="price-label">From</span>
+                                <span class="price-value">$1,799</span>
+                                <span class="price-per">per person</span>
+                            </div>
+                            <a href="#booking" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Asian Adventure -->
+                <div class="package-card" data-category="adventure" data-aos="fade-up" data-aos-delay="200">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1480796927426-f609979314bd?w=800&h=600&fit=crop" alt="Asian Adventure">
+                        <div class="package-duration">
+                            <i class="fas fa-clock"></i> 12 Days
+                        </div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header">
+                            <h3>Asian Adventure</h3>
+                            <div class="package-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(189 reviews)</span>
+                            </div>
+                        </div>
+                        <p class="package-description">Discover the ancient temples and modern wonders of Thailand, Cambodia, and Vietnam on this epic journey.</p>
+                        <div class="package-features">
+                            <span><i class="fas fa-hotel"></i> 3-4 Star Hotels</span>
+                            <span><i class="fas fa-utensils"></i> Most Meals</span>
+                            <span><i class="fas fa-bus"></i> Transportation</span>
+                            <span><i class="fas fa-landmark"></i> Temple Tours</span>
+                        </div>
+                        <div class="package-itinerary">
+                            <h4><i class="fas fa-list"></i> Highlights:</h4>
+                            <ul>
+                                <li>Angkor Wat Temple Complex</li>
+                                <li>Ha Long Bay Cruise</li>
+                                <li>Bangkok's Grand Palace</li>
+                            </ul>
+                        </div>
+                        <div class="package-footer">
+                            <div class="package-price">
+                                <span class="price-label">From</span>
+                                <span class="price-value">$2,199</span>
+                                <span class="price-per">per person</span>
+                            </div>
+                            <a href="#booking" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Maldives Luxury Escape -->
+                <div class="package-card" data-category="luxury" data-aos="fade-up">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800&h=600&fit=crop" alt="Maldives Luxury">
+                        <div class="package-duration">
+                            <i class="fas fa-clock"></i> 5 Days
+                        </div>
+                        <div class="package-badge">Luxury</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header">
+                            <h3>Maldives Luxury Escape</h3>
+                            <div class="package-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(156 reviews)</span>
+                            </div>
+                        </div>
+                        <p class="package-description">Ultimate luxury in an overwater villa with crystal-clear lagoons, world-class diving, and pristine beaches.</p>
+                        <div class="package-features">
+                            <span><i class="fas fa-hotel"></i> 5-Star Resort</span>
+                            <span><i class="fas fa-utensils"></i> All-Inclusive</span>
+                            <span><i class="fas fa-cocktail"></i> Premium Bar</span>
+                            <span><i class="fas fa-spa"></i> Daily Spa</span>
+                        </div>
+                        <div class="package-itinerary">
+                            <h4><i class="fas fa-list"></i> Highlights:</h4>
+                            <ul>
+                                <li>Private Overwater Villa</li>
+                                <li>Sunset Dolphin Cruise</li>
+                                <li>Underwater Restaurant Dining</li>
+                            </ul>
+                        </div>
+                        <div class="package-footer">
+                            <div class="package-price">
+                                <span class="price-label">From</span>
+                                <span class="price-value">$3,999</span>
+                                <span class="price-per">per person</span>
+                            </div>
+                            <a href="#booking" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Japanese Culture Tour -->
+                <div class="package-card" data-category="cultural" data-aos="fade-up" data-aos-delay="100">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&h=600&fit=crop" alt="Japan">
+                        <div class="package-duration">
+                            <i class="fas fa-clock"></i> 8 Days
+                        </div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header">
+                            <h3>Japanese Culture Tour</h3>
+                            <div class="package-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(223 reviews)</span>
+                            </div>
+                        </div>
+                        <p class="package-description">Experience the perfect blend of ancient traditions and modern innovation in Tokyo, Kyoto, and Osaka.</p>
+                        <div class="package-features">
+                            <span><i class="fas fa-hotel"></i> Traditional Ryokan</span>
+                            <span><i class="fas fa-utensils"></i> Authentic Cuisine</span>
+                            <span><i class="fas fa-train"></i> Rail Pass</span>
+                            <span><i class="fas fa-torii-gate"></i> Temple Visits</span>
+                        </div>
+                        <div class="package-itinerary">
+                            <h4><i class="fas fa-list"></i> Highlights:</h4>
+                            <ul>
+                                <li>Mount Fuji & Hakone</li>
+                                <li>Fushimi Inari Shrine</li>
+                                <li>Tea Ceremony Experience</li>
+                            </ul>
+                        </div>
+                        <div class="package-footer">
+                            <div class="package-price">
+                                <span class="price-label">From</span>
+                                <span class="price-value">$2,899</span>
+                                <span class="price-per">per person</span>
+                            </div>
+                            <a href="#booking" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dubai Luxury Experience -->
+                <div class="package-card" data-category="luxury" data-aos="fade-up" data-aos-delay="200">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&h=600&fit=crop" alt="Dubai">
+                        <div class="package-duration">
+                            <i class="fas fa-clock"></i> 6 Days
+                        </div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header">
+                            <h3>Dubai Luxury Experience</h3>
+                            <div class="package-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(198 reviews)</span>
+                            </div>
+                        </div>
+                        <p class="package-description">Experience opulence in the city of gold with luxury hotels, desert safaris, and world-class attractions.</p>
+                        <div class="package-features">
+                            <span><i class="fas fa-hotel"></i> 5-Star Hotel</span>
+                            <span><i class="fas fa-utensils"></i> Gourmet Dining</span>
+                            <span><i class="fas fa-car"></i> Private Transfer</span>
+                            <span><i class="fas fa-shopping-bag"></i> Mall Tours</span>
+                        </div>
+                        <div class="package-itinerary">
+                            <h4><i class="fas fa-list"></i> Highlights:</h4>
+                            <ul>
+                                <li>Burj Khalifa & Dubai Mall</li>
+                                <li>Desert Safari with BBQ</li>
+                                <li>Luxury Yacht Cruise</li>
+                            </ul>
+                        </div>
+                        <div class="package-footer">
+                            <div class="package-price">
+                                <span class="price-label">From</span>
+                                <span class="price-value">$2,699</span>
+                                <span class="price-per">per person</span>
+                            </div>
+                            <a href="#booking" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Family Fun in Orlando -->
+                <div class="package-card" data-category="family" data-aos="fade-up">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1600184434283-4102de38c467?w=800&h=600&fit=crop" alt="Orlando">
+                        <div class="package-duration">
+                            <i class="fas fa-clock"></i> 7 Days
+                        </div>
+                        <div class="package-badge">Family</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header">
+                            <h3>Family Fun in Orlando</h3>
+                            <div class="package-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(342 reviews)</span>
+                            </div>
+                        </div>
+                        <p class="package-description">The ultimate family vacation with theme park tickets, character dining, and magical experiences for all ages.</p>
+                        <div class="package-features">
+                            <span><i class="fas fa-hotel"></i> Family Resort</span>
+                            <span><i class="fas fa-ticket-alt"></i> Park Tickets</span>
+                            <span><i class="fas fa-shuttle-van"></i> Airport Transfer</span>
+                            <span><i class="fas fa-child"></i> Kids Activities</span>
+                        </div>
+                        <div class="package-itinerary">
+                            <h4><i class="fas fa-list"></i> Highlights:</h4>
+                            <ul>
+                                <li>Walt Disney World Parks</li>
+                                <li>Universal Studios</li>
+                                <li>Character Meet & Greets</li>
+                            </ul>
+                        </div>
+                        <div class="package-footer">
+                            <div class="package-price">
+                                <span class="price-label">From</span>
+                                <span class="price-value">$1,999</span>
+                                <span class="price-per">per person</span>
+                            </div>
+                            <a href="#booking" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Romantic Greek Islands -->
+                <div class="package-card" data-category="romantic" data-aos="fade-up" data-aos-delay="100">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=800&h=600&fit=crop" alt="Santorini">
+                        <div class="package-duration">
+                            <i class="fas fa-clock"></i> 9 Days
+                        </div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header">
+                            <h3>Romantic Greek Islands</h3>
+                            <div class="package-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(276 reviews)</span>
+                            </div>
+                        </div>
+                        <p class="package-description">Island-hop through Santorini, Mykonos, and Athens. Perfect for honeymoons and romantic getaways.</p>
+                        <div class="package-features">
+                            <span><i class="fas fa-hotel"></i> Boutique Hotels</span>
+                            <span><i class="fas fa-ship"></i> Ferry Tickets</span>
+                            <span><i class="fas fa-glass-cheers"></i> Wine Tasting</span>
+                            <span><i class="fas fa-heart"></i> Couples Spa</span>
+                        </div>
+                        <div class="package-itinerary">
+                            <h4><i class="fas fa-list"></i> Highlights:</h4>
+                            <ul>
+                                <li>Santorini Sunset in Oia</li>
+                                <li>Mykonos Beach Clubs</li>
+                                <li>Athens Acropolis Tour</li>
+                            </ul>
+                        </div>
+                        <div class="package-footer">
+                            <div class="package-price">
+                                <span class="price-label">From</span>
+                                <span class="price-value">$3,299</span>
+                                <span class="price-per">per person</span>
+                            </div>
+                            <a href="#booking" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- African Safari Adventure -->
+                <div class="package-card" data-category="adventure" data-aos="fade-up" data-aos-delay="200">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&h=600&fit=crop" alt="Safari">
+                        <div class="package-duration">
+                            <i class="fas fa-clock"></i> 10 Days
+                        </div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header">
+                            <h3>African Safari Adventure</h3>
+                            <div class="package-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(167 reviews)</span>
+                            </div>
+                        </div>
+                        <p class="package-description">Witness the Big Five in their natural habitat across Kenya and Tanzania's premier wildlife reserves.</p>
+                        <div class="package-features">
+                            <span><i class="fas fa-campground"></i> Safari Lodge</span>
+                            <span><i class="fas fa-utensils"></i> All Meals</span>
+                            <span><i class="fas fa-binoculars"></i> Game Drives</span>
+                            <span><i class="fas fa-camera"></i> Photography Tour</span>
+                        </div>
+                        <div class="package-itinerary">
+                            <h4><i class="fas fa-list"></i> Highlights:</h4>
+                            <ul>
+                                <li>Serengeti National Park</li>
+                                <li>Ngorongoro Crater</li>
+                                <li>Maasai Village Visit</li>
+                            </ul>
+                        </div>
+                        <div class="package-footer">
+                            <div class="package-price">
+                                <span class="price-label">From</span>
+                                <span class="price-value">$4,299</span>
+                                <span class="price-per">per person</span>
+                            </div>
+                            <a href="#booking" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="section" id="booking" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Book Your Tour</h2>
+                <p class="section-subtitle">Fill out the form and we'll get back to you shortly</p>
+            </div>
+            <div class="contact-form-wrapper" style="max-width: 700px; margin: 0 auto;" data-aos="fade-up">
+                <form class="contact-form" id="bookingForm">
+                    <div class="form-group">
+                        <label for="bookingName">Full Name *</label>
+                        <input type="text" id="bookingName" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookingEmail">Email Address *</label>
+                        <input type="email" id="bookingEmail" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookingPhone">Phone Number *</label>
+                        <input type="tel" id="bookingPhone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookingPackage">Select Package</label>
+                        <select id="bookingPackage" name="package">
+                            <option value="">Choose a package...</option>
+                            <option value="european">European Highlights</option>
+                            <option value="bali">Tropical Paradise - Bali</option>
+                            <option value="asian">Asian Adventure</option>
+                            <option value="maldives">Maldives Luxury Escape</option>
+                            <option value="japan">Japanese Culture Tour</option>
+                            <option value="dubai">Dubai Luxury Experience</option>
+                            <option value="orlando">Family Fun in Orlando</option>
+                            <option value="greece">Romantic Greek Islands</option>
+                            <option value="safari">African Safari Adventure</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookingTravelers">Number of Travelers *</label>
+                        <select id="bookingTravelers" name="travelers" required>
+                            <option value="">Select...</option>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="5+">5+ People</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookingDate">Preferred Travel Date *</label>
+                        <input type="date" id="bookingDate" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookingMessage">Additional Requirements</label>
+                        <textarea id="bookingMessage" name="message" rows="4" placeholder="Tell us about any special requests or requirements..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Booking Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-plane-departure"></i>
+                        <span>Wanderlust Travel</span>
+                    </div>
+                    <p>Your trusted partner for unforgettable travel experiences around the world.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="packages.html">Tour Packages</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Booking Guide</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Travel Street, Adventure City, TC 12345</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@wanderlusttravel.com</li>
+                        <li><i class="fas fa-clock"></i> Mon - Fri: 9:00 AM - 6:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Wanderlust Travel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
